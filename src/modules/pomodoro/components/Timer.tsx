@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faRepeat } from '@fortawesome/free-solid-svg-icons';
 
+import './timer.css'
 import Controls from './Controls';
 import TimerHandlers from '../handlers/timer.handlers';
 
