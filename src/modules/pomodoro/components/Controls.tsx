@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import "./controls.css"
+import "../styles/controls.css"
 interface ControlsProps {
   updateWorkTime: (newWorkTime: number) => void;
   updateBreakTime: (newBreakTime: number) => void;

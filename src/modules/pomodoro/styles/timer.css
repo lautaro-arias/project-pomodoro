@@ -1,0 +1,174 @@
+
+.app-container{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .clock-list{
+    width: 300px;
+    list-style-type: none;
+    display: flex;
+    background: var(--dark-blue);
+    border-radius: 50px;
+    padding: 5px;
+    height: 50px;
+    font-family: var(--font-1);
+  }
+  
+  .clock-list li{
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    color: var(--bluish-gray);
+  }
+  
+  .activeLi{
+    background: var(--blue);
+    color:  var(--dark-blue);
+  }
+  
+  
+  .clocks-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 15px solid #2a2e52;
+    background: var(--dark-blue);
+    color: var(--bluish-gray);
+    box-shadow: 0px 0px 50px hsl(236, 30%, 50%),
+               20px 20px 50px hsl(236, 30%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse{
+    0%{
+      
+    }
+    50%{
+      box-shadow: 0px 0px 100px hsl(236, 30%, 50%),
+                 20px 20px 100px hsl(236, 30%, 10%);
+    }
+    100%{
+      box-shadow: 0px 0px 50px hsl(236, 30%, 50%),
+                 20px 20px 50px hsl(236, 30%, 10%);
+    }
+  }
+  
+  .time-left{
+    font-size: 3.9rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #pomodoro, #short, #long{
+    display: grid;
+  }
+  
+  .button{
+    font-family: monospace;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  .button-return{
+    font-family: monospace;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 17px;
+    margin-right: 20px;
+  
+  }
+  
+  button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .row{
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-stretch: expanded;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .timer-settings{
+    background-color: none;
+  }
+  
+  #timer-inputs{
+    margin-top: 16px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #timer-inputs label{
+    font-size: 11px;
+    color: #6f6f6f;
+  }
+  
+  input{
+    width: 100%;
+    height: 30px;
+    background: var(--input-gray);
+    border-radius: .5rem;
+  }
+  
+  .apply-settings{
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%, 10px);
+    background: var(--peach);
+    border-radius: 2rem;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  input{
+    border: none;
+    outline: none;
+  }
+  
+  svg{
+    position: absolute;
+  }
+  
+  @media only screen and (max-width:768px){
+    body {
+      font-size: 16px; 
+    }
+    
+    .app-header {
+      font-size: 2em; 
+    }
+    .app-container {
+      width: 90vw; 
+      height: 80vh; 
+    }
+  }
