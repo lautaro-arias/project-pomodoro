@@ -36,8 +36,7 @@ const Timer: React.FC = () => {
           <div className="clocks-container">
             <div id="pomodoro" data-tab-content>
               <span className="time-left">
-                <span id="pomodoro-minutes">{formatTime(isWorking ? work : breakTime)}</span> :
-                <span id="pomodoro-swork">00</span>
+                <span id="pomodoro-minutes">{formatTime(isWorking ? work : breakTime)}</span>
               </span>
               <button className="button" onClick={toggleTimer}>
                 {isActive ? 'Pausar' : 'Comenzar'}
